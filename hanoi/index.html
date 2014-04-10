@@ -1,0 +1,94 @@
+<html>
+<style>
+html, body, section, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+div {
+  height: 50px;
+}
+
+.container{
+  width: 960px;
+  height: 200px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.container:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tower {
+  width: 310px;
+  height: 180px;
+  margin: 5px;
+  border-bottom: 5px solid black;
+  float: left;
+}
+
+.tower:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.small {
+  width: 100px;
+  background-color: blue;
+}
+
+.medium {
+  width: 200px;
+  background-color: teal;
+}
+
+.large {
+  width: 300px;
+  background-color: green;
+}
+
+.disc {
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  border: 5px solid black;
+}
+
+.selected {
+  border-bottom: 5px solid red;
+}
+
+</style>
+  <head>
+    <script src='jquery-1.9.1.js'></script>
+    <script src='underscore.js'></script>
+    <script src='hanoi.js'></script>
+    <script src='hanoi.ui.js'></script>
+  </head>
+<body>
+<section class='container'>
+    <section class='tower left'>
+      <div class='small disc'></div>
+      <div class='medium disc'></div>
+      <div class='large disc'></div>
+    </section>
+    <section class='tower middle'>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+
+    <section class='tower right'>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </section>
+</body>
+</html>
