@@ -1,0 +1,57 @@
+<html>
+  <style>
+  div {
+    margin: 0;
+    padding: 0;
+    border: 5px solid black;
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+
+  section {
+    width: 330px;
+    border: 5px solid black;
+    margin: 100px auto;
+  }
+
+  section:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .tile {
+    background-color: grey;
+  }
+
+  .tile-red {
+    background-color: red;
+  }
+
+  .tile-blue {
+    background-color: blue;
+  }
+
+  </style>
+  <head>
+    <script src='jquery-1.9.1.js'></script>
+    <script src='underscore.js'></script>
+    <script src='ttt.js'></script>
+    <script src='ttt.ui.js'></script>
+  </head>
+</html>
+
+<body>
+  <section>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+    <div class='tile'></div>
+  </section>
+</body>
